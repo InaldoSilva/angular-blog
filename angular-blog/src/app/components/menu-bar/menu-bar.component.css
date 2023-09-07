@@ -1,0 +1,16 @@
+* {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.lista {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.lista li {
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
