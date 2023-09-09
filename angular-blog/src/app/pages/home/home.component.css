@@ -1,11 +1,12 @@
 .container__articles {
+  background-color: transparent;
   margin-top    : 3%;
   display       : flex;
   flex-direction: row;
 }
 
 .articles__others {
-  margin-left: 13%;
+  margin: 4%;
   width: 45%;
   background-color: transparent;
 }
