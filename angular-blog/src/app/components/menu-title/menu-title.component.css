@@ -5,8 +5,13 @@
   justify-content: center;
 }
 
-.title-img{
-  background-color: transparent;
+@media screen and (min-width:320px) and (max-width:768px) {
+  .container__menu-title {
+    display: block;
+    justify-content: center;
+  }
 }
+
+
 
 

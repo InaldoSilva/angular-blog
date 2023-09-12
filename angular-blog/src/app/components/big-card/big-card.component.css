@@ -13,41 +13,35 @@
 
 .bc-img {
   width: 100%;
-  border: solid 1px rgb(20, 160, 139);
+  border: solid 1px #0B9786;
   border-radius: 5px;
   margin-top: 0;
 }
 
-h2 {
+h2 a{
   color: aliceblue;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h6, p {
+p a{
   color: grey;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-p {
-  font-size: 1rem;
+p a {
+  font-size: .8rem;
 }
 
-/*@media screen and (min-width:320px) and (max-width: 680px){
-  .container__big-card {
-    background-color: transparent;
-    margin:0 10%;
-    width: 90%;
+@media screen and (min-width:320px) and (max-width:768px) {
+  .container__big-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 160%;
+    margin: 10% 3%;
+    padding: 5px;
   }
-  img{
-    background-color: transparent;
-    margin: 0 7.5%;
-    max-width: 85%;
-  }
-
-  .big-card-tile, .big-card-description, .big-card-img-font {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: 0 auto;
-  }
-}*/
-
+}

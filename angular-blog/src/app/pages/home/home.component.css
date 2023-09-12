@@ -4,9 +4,67 @@
   display       : flex;
   flex-direction: row;
 }
+/*container articles media query*/
+@media screen and (min-width:320px) and (max-width:768px) {
+  .container__articles {
+    margin: 10% auto;
+  }
+}
 
 .articles__others {
-  margin: 4%;
+  margin: 4.5%;
   width: 45%;
   background-color: transparent;
 }
+
+.line {
+  margin: 0 auto;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  .line {
+    margin: 0 250px;
+  }
+}
+
+.container__games-articles {
+  background-color: transparent;
+  margin          :2% 20%;
+  display         : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items     : center;
+  font-size: .5rem;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  object-fit: contain;
+}
+/*section-title media query*/
+@media screen and (min-width: 320px) and (max-width:768px){
+  .section-title > img{
+    width: 500px;
+  }
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+  }
+
+  .container__games-articles {
+    width: 100%;
+  }
+
+  .container__games-articles > app-big-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin:  1rem;
+  }
+}
+
