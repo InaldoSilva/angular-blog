@@ -1,8 +1,14 @@
 <div class="container__small-card">
+
   <div class="small-card-img">
     <img src="{{photoCover}}" alt="" >
   </div>
-  <div class="small-card-tile">
-    <h2><a href="#">{{cardTitle}}</a></h2>
+
+  <div class="small-card-title">
+    <h3><a [routerLink]="['content', Id]">{{cardTitle}}</a></h3>
+  </div>
+
+  <div class="action__btn">
+    <button><a [routerLink]="['content', Id]">Saiba mais</a></button>
   </div>
 </div>

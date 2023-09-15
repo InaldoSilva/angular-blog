@@ -1,14 +1,13 @@
 .container__big-card {
   border: none;
   border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 70%;
-  margin: 10%;
-}
-
-.container__big-card {
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .bc-img {
@@ -16,9 +15,19 @@
   border: solid 1px #0B9786;
   border-radius: 5px;
   margin-top: 0;
+
+  -webkit-box-shadow: 0px 3px 5px 5px rgba(11, 151, 134, 0.52);
+  -moz-box-shadow: 0px 3px 5px 5px rgba(11, 151, 134, 0.52);
+  box-shadow: 0px 3px 5px 5px rgba(11, 151, 134, 0.52);
 }
 
-h2 a{
+.big-card-title h2{
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.big-card-title , a{
+  background-color: transparent;
   color: aliceblue;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

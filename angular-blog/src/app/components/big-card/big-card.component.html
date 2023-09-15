@@ -3,13 +3,13 @@
     <img class="bc-img" src="{{photoCover}}" alt="big card img">
   </div>
 
-  <div class="big-card-tile">
-    <h2><a href="#">{{ cardTitle }}</a></h2>
+  <div class="big-card-title">
+    <h2><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h2>
   </div><br>
 
   <div class="big-card-description">
     <p>
-      <a href="">{{cardDescription}}</a>
+      <a [routerLink]="['content', Id]">{{cardDescription}}</a>
     </p>
   </div>
 </div><br>

@@ -13,7 +13,9 @@ export class SmallCardComponent implements OnInit{
   @Input()
   photoCover:string = ""
   @Input()
-  cardTitle:string = "Lançamento Android 14"
+  cardTitle:string = ""
+  @Input()
+  Id:string="0"
   constructor(){}
 
   ngOnInit(): void {

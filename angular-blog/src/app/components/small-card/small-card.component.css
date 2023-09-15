@@ -1,38 +1,80 @@
 .container__small-card {
-  background-color: transparent;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-card-img img{
+  width: 80%;
+  margin: 2% 10%;
   border: solid 1px #0B9786;
   border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 24%;
-  padding: 2px;
-  margin-top: 1%;
+
+  -webkit-box-shadow: 0px 9px 5px 5px rgba(11, 151, 134, 0.52);
+  -moz-box-shadow: 0px 9px 5px 5px rgba(11, 151, 134, 0.52);
+  box-shadow: 0px 9px 5px 5px rgba(11, 151, 134, 0.52);
 }
 
-.small-card-img > img{
-  width: 48%;
-  border-radius: 5px;
-}
-
-h2 a{
+.small-card-title {
   background-color: transparent;
-  color: aliceblue;
-  text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+  padding: 5px;
+  margin-top: 10px;
 }
+
+.small-card-title a{
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.action__btn > button{
+  background-color: #0B9786;
+  border-radius: 5px;
+  width: 80px;
+  line-height: 20px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+.action__btn  a {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.action__btn >button:hover {
+  cursor: pointer;
+  background-color: blue;
+  border: solid 2px aliceblue;
+}
+
+/*media query*/
 
 @media screen and (min-width: 320px) and (max-width: 768px){
   .container__small-card {
     margin     :2% 190px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 250px;
   }
 
   .small-card-tile {
     background-color: transparent;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
