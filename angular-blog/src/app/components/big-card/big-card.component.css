@@ -1,24 +1,32 @@
+.destaque {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
 .container__big-card {
   border: none;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.big-card {
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 98vw;
-  height: 100vh;
-  margin: 0 auto;
+  margin: 0;
+  padding-right: 10px;
 }
 
 .bc-img {
-  width: 100%;
-  border: solid 1px #0B9786;
-  border-radius: 5px;
-  margin-top: 0;
-
-  -webkit-box-shadow: 0px 3px 5px 5px rgba(11, 151, 134, 0.52);
-  -moz-box-shadow: 0px 3px 5px 5px rgba(11, 151, 134, 0.52);
-  box-shadow: 0px 3px 5px 5px rgba(11, 151, 134, 0.52);
+  border: solid 3px silver;
+  width: 95%;
 }
 
 .big-card-title h2{
@@ -43,14 +51,55 @@ p a {
   font-size: .8rem;
 }
 
+.video-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.video-content,  h1  p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.video-frame iframe{
+  width: 520px;
+  height: 338px;
+}
+
 @media screen and (min-width:320px) and (max-width:768px) {
+
   .container__big-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 160%;
-    margin: 10% 3%;
-    padding: 5px;
+    min-width: 80%;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .big-card {
+    width: 80% !important;
+    height: 70%;
+    font-size: .7rem;
+  }
+
+  .video-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .5rem;
+  }
+  .video-frame > iframe {
+    width: 100%;
+    height: auto;
   }
 }
+
+

@@ -7,7 +7,7 @@ export const dataFake = [
   },
   {
     "id": "2",
-    "photoCover": "https://media.licdn.com/dms/image/sync/D4D27AQEN_vI1fSqIig/articleshare-shrink_800/0/1694468978139?e=1695240000&v=beta&t=1EQre5bawWFEw7SEZDl-KUUsC4uc8laJUaa5hYjSKyM",
+    "photoCover": "https://assets-global.website-files.com/5f841209f4e71b2d70034471/6078b650748b8558d46ffb7f_Flutter%20app%20development.png",
     "title": "O Flutter vai acabar?",
     "description": ""
   },

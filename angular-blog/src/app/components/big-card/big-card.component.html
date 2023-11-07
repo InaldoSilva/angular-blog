@@ -1,15 +1,28 @@
-<div class="container__big-card">
-  <div class="big-card-img">
-    <img class="bc-img" src="{{photoCover}}" alt="big card img">
+<h1 class="destaque">Destaque</h1>
+<main class="container__big-card">
+  <div class="big-card">
+    <div class="big-card-img">
+      <img class="bc-img" src="{{photoCover}}" alt="big card img">
+    </div>
+
+    <div class="big-card-title">
+      <h2><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h2>
+    </div><br>
+
+    <div class="big-card-description">
+      <p>
+        <a [routerLink]="['content', Id]">{{cardDescription}}</a>
+      </p>
+    </div>
   </div>
 
-  <div class="big-card-title">
-    <h2><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h2>
-  </div><br>
-
-  <div class="big-card-description">
-    <p>
-      <a [routerLink]="['content', Id]">{{cardDescription}}</a>
-    </p>
+  <div class="video-content">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/WdJub3Kz2wI?si=B0cxiLcF1fBkJQx5&amp ; start=5"
+        title="YouTube video player" frameborder="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
   </div>
-</div><br>
+</main>
+

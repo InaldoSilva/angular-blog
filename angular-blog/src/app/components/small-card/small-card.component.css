@@ -1,5 +1,5 @@
 .container__small-card {
-  padding: 5px;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,12 +10,15 @@
 .small-card-img img{
   width: 80%;
   margin: 2% 10%;
-  border: solid 1px #0B9786;
+  border: solid 2px silver;
   border-radius: 5px;
 
-  -webkit-box-shadow: 0px 9px 5px 5px rgba(11, 151, 134, 0.52);
-  -moz-box-shadow: 0px 9px 5px 5px rgba(11, 151, 134, 0.52);
-  box-shadow: 0px 9px 5px 5px rgba(11, 151, 134, 0.52);
+  box-shadow: 0 0 .1rem transparent,
+      0 0 .2rem white,
+      0 0 .5rem #bc13fe,
+      0 0 0.1rem #bc13fe,
+      0 0 0.8rem #bc13fe,
+      inset 0 0 1.3rem #bc13fe;
 }
 
 .small-card-title {
@@ -37,7 +40,7 @@
 }
 
 .action__btn > button{
-  background-color: #0B9786;
+  background-color: #bc13fe;
   border-radius: 5px;
   width: 80px;
   line-height: 20px;
@@ -62,19 +65,16 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px){
   .container__small-card {
-    margin     :2% 190px;
+    margin : 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 250px;
+    min-width: 220px;
   }
 
-  .small-card-tile {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .small-card-tile > h3 , a {
+    text-align: center;
+    font-size: .6rem;
   }
 }

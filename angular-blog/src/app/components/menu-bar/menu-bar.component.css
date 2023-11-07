@@ -4,11 +4,23 @@
   box-sizing: border-box;
 }
 
+.nav {
+  margin-top: 20px;
+}
+
 .nav > ul{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5px;
+
+  box-shadow: 0 0 .1rem transparent,
+      0 0 .2rem white,
+      0 0 .5rem #bc13fe,
+      0 0 0.1rem #bc13fe,
+      0 0 0.8rem #bc13fe,
+      inset 0 0 1.3rem #bc13fe;
  }
 
  li, a  {
@@ -17,15 +29,22 @@
   justify-content: center;
   list-style: none;
   text-decoration: none;
+  background-color: transparent;
   color: aliceblue;
   font-family: 'Segoe UI';
  }
 
  a:hover {
   cursor: pointer;
-  color:#3498db ;
-  background-color: black;
+  color:aliceblue ;
+  background-color: transparent;
   border-radius: 5px;
+  box-shadow: 0 0 .1rem transparent,
+      0 0 .1rem transparent,
+      0 0 .5rem #bc13fe,
+      0 0 0.1rem #bc13fe,
+      0 0 0.8rem #bc13fe,
+      inset 0 0 1.3rem #bc13fe;
  }
 
  /*media query*/
@@ -36,5 +55,6 @@
     grid-template-columns: 1fr;
     margin: 0 auto;
     font-size: .5rem;
+    margin-top: 20px;
   }
  }
